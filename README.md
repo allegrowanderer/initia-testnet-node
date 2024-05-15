@@ -1,13 +1,13 @@
-# initia-Node
+# initia-testnet-Node
+
+Ben Ubuntu 22.04'ü tercih ettim.
 
 | Bileşenler | Minimum Gereksinimler | 
 | ------------ | ------------ |
-| Ubuntu 20.04.2 |
+| Ubuntu 20.04 |
 | CPU |	4 |
-| RAM	| 6 GB |
-| Storage	| 250 GB SSD |
-
-# Sunucumuzu Güncelliyoruz.
+| RAM	| 16 GB |
+| Storage	| 1 TB SSD |
 
 ```
 sudo apt update
@@ -47,6 +47,8 @@ cd initia
 git checkout v0.2.12
 ```
 
+#Make install bir kaç dakika sürebilir
+
 ```
 make install
 ```
@@ -57,10 +59,10 @@ Version v0.2.12 olmalı.
 initiad version
 ```
 
-Node İsminizi Girin.
+Büyük harflerle yazılı olan bölüme node isminizi girin.
 
 ```
-initiad init nodeismi --chain-id initiation-1
+initiad init NODEISMINIZIGIRIN --chain-id initiation-1
 ```
 
 ```
@@ -82,6 +84,10 @@ Snapshot
 ```
 initiad tendermint unsafe-reset-all --home $HOME/.initia
 curl -o - -L https://initia-testnet-snapshots.f5nodes.com/initiation-1_133107.tar.lz4 | lz4 -c -d - | tar -x -C $HOME/.initia
+```
+
+```
+sudo apt install screen
 ```
 
 BAŞLATALIM.
@@ -173,7 +179,7 @@ Kodu Yazdıktan Sonra şifre soracak 2 kere aynı şifreyi girin ve 24 Kelimeniz
 Ve cüzdan isminizi Düzenleyin
 
 ```
-initiad keys add cüzdanisminiz
+initiad keys add CUZDANISMINIZ
 ```
 
 Daha Sonra Cüzdanınıza Faucet alın Faucet Linki:
@@ -185,12 +191,12 @@ Validator Oluşturma Komutu,
 initiad tx mstaking create-validator \
   --amount=1000000uinit \
   --pubkey=$(initiad tendermint show-validator) \
-  --moniker=nodeismi \
+  --moniker=NODEISMINIZ \
   --chain-id=initiation-1 \
   --commission-rate=0.05 \
   --commission-max-rate=0.10 \
   --commission-max-change-rate=0.01 \
-  --from=cüzdanismi \
+  --from=CUZDANISMI(OLUSTURURKEN VERDIGIN ISIMLE AYNI OLMALI) \
   --details="" \
   --gas=2000000 --fees=300000uinit \
   -y
