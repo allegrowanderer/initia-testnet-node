@@ -61,7 +61,7 @@ Version v0.2.12 olmalı.
 initiad version
 ```
 
-Büyük harflerle yazılı olan bölüme node isminizi girin.
+Büyük harflerle yazılı olan kelimenin yerine node isminizi girin.
 
 ```
 initiad init NODEISMINIZIGIRIN --chain-id initiation-1
