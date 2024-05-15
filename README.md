@@ -49,7 +49,7 @@ cd initia
 git checkout v0.2.12
 ```
 
-#Make install bir kaç dakika sürebilir
+Make install bir kaç dakika sürebilir
 
 ```
 make install
