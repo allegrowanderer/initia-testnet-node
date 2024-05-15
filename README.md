@@ -118,7 +118,7 @@ Minimum Gas Priceyi Ayarlıyoruz.
 sed -i -e 's/external_address = \"\"/external_address = \"'$(curl httpbin.org/ip | jq -r .origin)':26656\"/g' ~/.initia/config/config.toml
 ```
 
-Service Dosyamızı Oluşturuyoruz.
+Service Dosyamızı Oluşturuyoruz. Hepsini tek seferde yapıştırabilirsiniz.
 
 ```
 sudo tee /etc/systemd/system/initiad.service > /dev/null <<EOF
