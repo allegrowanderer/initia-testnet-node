@@ -4,7 +4,6 @@ Ben Ubuntu 22.04'ü tercih ettim.
 
 | Bileşenler | Minimum Gereksinimler | 
 | ------------ | ------------ |
-| Ubuntu 20.04 |
 | CPU |	4 |
 | RAM	| 16 GB |
 | Storage	| 1 TB SSD |
