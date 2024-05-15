@@ -8,6 +8,9 @@ Ben Ubuntu 22.04'ü tercih ettim.
 | RAM	| 16 GB |
 | Storage	| 1 TB SSD |
 
+
+# Başlayalım
+
 ```
 sudo apt update
 ```
