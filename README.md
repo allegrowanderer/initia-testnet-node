@@ -203,6 +203,15 @@ initiad tx mstaking create-validator \
   --gas=2000000 --fees=300000uinit \
   -y
 ```
+Böyle bir ekranda tx hashinizi göreceksiniz.
+
+![Ekran görüntüsü 2024-05-15 170544](https://github.com/allegrowanderer/initia-testnet-node/assets/151822487/b8749a4c-6942-4495-bcfc-1cf15c2231de)
+
+Bir kaç dakika sonra buradan hashinizi aratın. 
+
+https://scan.testnet.initia.xyz/initiation-1
+
+Biraz aşağıya kaydırdığınızda validator adresinizi göreceksiniz üzerine tıklayıp kontrol edebilirsiniz.
 
 
 
