@@ -187,7 +187,7 @@ initiad keys add CUZDANISMINIZ
 Daha Sonra Cüzdanınıza Faucet alın Faucet Linki:
 https://faucet.testnet.initia.xyz/
 
-Validator Oluşturma Komutu,
+Validator Oluşturma Komutu,(CUZDAN ISMI OLUSTURURKEN VERDIGIN ISIMLE AYNI OLMALI)
 
 ```
 initiad tx mstaking create-validator \
@@ -198,7 +198,7 @@ initiad tx mstaking create-validator \
   --commission-rate=0.05 \
   --commission-max-rate=0.10 \
   --commission-max-change-rate=0.01 \
-  --from=CUZDANISMI(OLUSTURURKEN VERDIGIN ISIMLE AYNI OLMALI) \
+  --from=CUZDANISMI \
   --details="" \
   --gas=2000000 --fees=300000uinit \
   -y
