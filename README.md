@@ -33,7 +33,7 @@ source $HOME/.bash_profile && \
 go version
 ```
 
-# Repoyu Klonluyoruz.
+# Initia'nın kendi reposunu klonluyoruz.
 
 ```
 git clone https://github.com/initia-labs/initia
